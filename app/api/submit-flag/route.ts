@@ -101,8 +101,6 @@ export async function POST(req: NextRequest) {
       }
       await col.updateOne(filter, update, { upsert: true })
     } catch (e) {
-      // Optional: add a server log here if needed
-      // console.log("[v0] MongoDB persistence skipped:", (e as Error)?.message)
     }
   })()
 
