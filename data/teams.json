@@ -1,0 +1,5 @@
+[
+  { "id": "t001", "name": "Red Rooks", "code": "red-1234" },
+  { "id": "t002", "name": "Blue Bishops", "code": "blue-5678" },
+  { "id": "t003", "name": "Green Knights", "code": "green-9012" }
+]

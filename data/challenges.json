@@ -1,0 +1,105 @@
+[
+  {
+    "id": "web-01",
+    "title": "Warmup: Headers",
+    "category": "web",
+    "difficulty": "easy",
+    "points": 50,
+    "description": "Inspect the HTTP response from /api/challenges. Can you find anything interesting?",
+  "hint": "Listen to the whispers above the body; metadata often speaks first.",
+    "flag": "CTF{headers_help_hunters}"
+  },
+  {
+    "id": "crypto-01",
+    "title": "Caesar Salad",
+    "category": "crypto",
+    "difficulty": "easy",
+    "points": 75,
+    "description": "Shift happens. Decode: 'Khoor, Zruog!'",
+  "hint": "An old general favors a simple march; the steps are small and uniform.",
+    "flag": "CTF{hello_world}"
+  },
+  {
+    "id": "forensics-01",
+    "title": "Hidden in Plain Sight",
+    "category": "forensics",
+    "difficulty": "medium",
+    "points": 100,
+    "description": "A string looks suspicious: Q1RGe2Jhc2U2NF9pc19jb21tb25fZW5jb2Rpbmd9",
+  "hint": "It hums in sixty‑four tones; sometimes it ends with padding.",
+    "flag": "CTF{base64_is_common_encoding}"
+  },
+  {
+    "id": "misc-02",
+    "title": "Brute Force Basics",
+    "category": "misc",
+    "difficulty": "medium",
+    "points": 90,
+    "description": "We hashed a 5-character lowercase-alphanumeric token with SHA-256. Find the hash in the /api/challenges response, recover the token by brute force, and submit as CTF{<token>}.",
+  "hint": "A hex trail rides the margins of your calls; five small steps reveal the way.",
+    "flag": "CTF{csit1}"
+  },
+  {
+    "id": "re-01",
+    "title": "VM Lemur",
+    "category": "re",
+    "difficulty": "hard",
+    "points": 220,
+  "description": "A tiny VM checks an input against an encoded blob: LzErDgEYBBkQLRoIMkRBX1IQ. Reverse the routine to recover the flag. Static checker: /vm/lemur.js",
+  "hint": "Peel a layer of sixty‑four before crossing an XOR bridge with a jungle guide.",
+    "flag": "CTF{state_vm_1337}"
+  },
+  {
+    "id": "pwn-01",
+    "title": "Buffer Basics",
+    "category": "pwn",
+    "difficulty": "hard",
+    "points": 200,
+    "description": "A classic overflow. In real events you'd exploit it; here, guess wisely ;)",
+  "hint": "One extra byte can tip the scales.",
+    "flag": "CTF{over_flow}"
+  }
+  ,
+  {
+    "id": "crypto-02",
+    "title": "Vigenère Vintage",
+    "category": "crypto",
+    "difficulty": "medium",
+    "points": 120,
+    "description": "Ciphertext: LXFOPVEFRNHR. Recover the plaintext with a classic polyalphabetic cipher and submit as CTF{<plaintext_lowercase>}.",
+  "hint": "The tune repeats; squeeze the clue you’re given.",
+    "flag": "CTF{attackatdawn}"
+  },
+  {
+    "id": "forensics-03",
+    "title": "Vector Secrets",
+    "category": "forensics",
+    "difficulty": "medium",
+    "points": 130,
+    "description": "An innocent site graphic may whisper more than it shows. Recover the hidden message and submit as CTF{...}.",
+  "hint": "Vectors carry layers and notes; read between the tags.",
+    "flag": "CTF{vector_comments_say_more}"
+  }
+  ,
+  {
+    "id": "web-02",
+    "title": "Little Bobby Tables",
+    "category": "web",
+    "difficulty": "medium",
+    "points": 140,
+  "description": "There’s a mock login at /api/sqli-demo that builds SQL using string concatenation. Log in as admin without the password and retrieve the hidden secret.",
+  "hint": "Quotes and comments can turn checks into tautologies.",
+    "flag": "CTF{quote_escape_failure}"
+  }
+  ,
+  {
+    "id": "misc-03",
+    "title": "Puzzle",
+    "category": "misc",
+    "difficulty": "medium",
+    "points": 120,
+    "description": "Use the in-app terminal to explore a sandboxed filesystem. Find a file and read the content, then submit it as-is.",
+  "hint": "Listing flags reveal the unseen; modes decide what you can read.",
+    "flag": "CTF{chmod_reveals_truth}"
+  }
+]
