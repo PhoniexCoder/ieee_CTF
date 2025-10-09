@@ -5,7 +5,7 @@
     "category": "web",
     "difficulty": "easy",
     "points": 50,
-    "description": "Inspect the HTTP response from /api/challenges. Can you find anything interesting?",
+    "description": "Whispers to /api/challenges. Can you find anything interesting?",
   "hint": "Listen to the whispers above the body; metadata often speaks first.",
     "flag": "CTF{headers_help_hunters}"
   },
@@ -55,7 +55,7 @@
     "category": "pwn",
     "difficulty": "hard",
     "points": 200,
-    "description": "A classic overflow. In real events you'd exploit it; here, guess wisely ;)",
+    "description": "A classic overflow. In real events you'd exploit it if not a pot; here, guess wisely ;)",
   "hint": "One extra byte can tip the scales.",
     "flag": "CTF{over_flow}"
   }
@@ -76,7 +76,7 @@
     "category": "forensics",
     "difficulty": "medium",
     "points": 130,
-    "description": "An innocent site graphic may whisper more than it shows. Recover the hidden message and submit as CTF{...}.",
+    "description": "A harmless-looking site graphic might be hiding more than it shows… Who knows, maybe the terminal lends a hand? 👀 Recover the hidden message and submit it as CTF{...}.",
   "hint": "Vectors carry layers and notes; read between the tags.",
     "flag": "CTF{vector_comments_say_more}"
   }
