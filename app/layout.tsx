@@ -8,7 +8,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   title: "technIEEEk's CTF",
-  description: "Created with phoniexcoder",
+  description: "Created by phoniexcoder",
 }
 
 export default function RootLayout({
