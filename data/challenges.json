@@ -87,7 +87,7 @@
     "category": "web",
     "difficulty": "medium",
     "points": 140,
-  "description": "There’s a mock login at /api/sqli-demo that builds SQL using string concatenation. Log in as admin without the password and retrieve the hidden secret.",
+  "description": "There’s a mock login at /sqli-demo that builds SQL using string concatenation. Log in as admin without the password and retrieve the hidden secret.",
   "hint": "Quotes and comments can turn checks into tautologies.",
     "flag": "CTF{quote_escape_failure}"
   }

@@ -1,6 +1,13 @@
 [
-  { "id": "t001", "name": "Red Rooks", "code": "red-1234" },
-  { "id": "t002", "name": "Blue Bishops", "code": "blue-5678" },
-  { "id": "t003", "name": "Green Knights", "code": "green-9012" },
-  { "id": "t004", "name": "Yellow Pawns", "code": "adarsh" }
+  { "id": "t011", "name": "Red Rooks", "code": "red-1234" },
+  { "id": "t010", "name": "Blue Bishops", "code": "blue-5678" },
+  { "id": "t009", "name": "Green Knights", "code": "green-9012" },
+  { "id": "t008", "name": "Yellow Pawns", "code": "adarsh" },
+  { "id": "t001", "name": "Gagan Deep Singh", "code": "2218745" },
+  { "id": "t002", "name": "Astik Tripathi", "code": "2028678" },
+  { "id": "t003", "name": "Sonali Upadhyay", "code": "2319660" },
+  { "id": "t004", "name": "Naitik Dhiman", "code": "2026221" },
+  { "id": "t005", "name": "Vedansh Singh Karki", "code": "2501666" },
+  { "id": "t006", "name": "Sourav", "code": "2419014" },
+  { "id": "t007", "name": "Nishil Bhimani", "code": "2026204" }
 ]
