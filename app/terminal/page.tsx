@@ -44,7 +44,7 @@ export default function TerminalPage() {
         <Card>
           <CardContent className="p-4">
             <div className="mb-3 text-sm text-muted-foreground">Sandboxed training terminal</div>
-            <div className="h-80 overflow-y-auto rounded bg-black p-3 font-mono text-sm text-green-400">
+            <div className="h-[38rem] overflow-y-auto rounded bg-black p-3 font-mono text-sm text-green-400">
               {lines.map((ln, i) => (
                 <div key={i} className="whitespace-pre-wrap">
                   {ln}

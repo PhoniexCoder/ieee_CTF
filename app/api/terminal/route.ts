@@ -10,15 +10,17 @@ type VfsNode = { type: "dir"; children: string[] } | { type: "file" }
 // VFS tree (logical structure only)
 const VFS: Record<string, VfsNode> = {
   "/": { type: "dir", children: ["public", "readme.txt"] },
-  "/public": { type: "dir", children: ["chals", "stego", "hidden"] },
+  "/public": { type: "dir", children: ["chals", "stego", "hidden", "ciphertext"] },
   "/public/stego": { type: "dir", children: ["vector-secrets.svg"] },
   "/public/hidden": { type: "dir", children: [".secret.txt"] },
   "/public/hidden/chals": { type: "dir", children: ["predict.c"] },
+  "/public/ciphertext": { type: "dir", children: ["Cipher1text.txt"] },
   "/readme.txt": { type: "file" },
   "/public/chals/predict.c": { type: "file" },
   "/public/stego/vector-secrets.svg": { type: "file" },
   "/public/hidden/.secret.txt": { type: "file" },
   "/public/hidden/chals/predict.c": { type: "file" },
+  "/public/ciphertext/Cipher1text.txt": { type: "file" },
 }
 
 // Whitelisted mapping from VFS files to real project files
@@ -28,6 +30,7 @@ const FILE_MAP: Record<string, string> = {
   "/public/stego/vector-secrets.svg": path.join(process.cwd(), "public", "stego", "vector-secrets.svg"),
   "/public/hidden/.secret.txt": path.join(process.cwd(), "public", "hidden", ".secret.txt"),
   "/public/hidden/chals/predict.c": path.join(process.cwd(), "public", "hidden", "chals", "predict.c"),
+  "/public/ciphertext/Cipher1text.txt": path.join(process.cwd(), "public", "ciphertext", "Cipher1text.txt"),
 }
 
 async function safeReadFile(vfsPath: string): Promise<string> {
