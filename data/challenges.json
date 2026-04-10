@@ -118,5 +118,35 @@
     "description": "RSA is only secure when implemented correctly. Can you recover the hidden message?\n\nn = ?\ne = 65537\nc = ?\n\nflag format: flag{...}",
     "hint": "Check if n is too small or has weak primes.\nCiphertext : n = 92840387492837492837492837492387492387492387492387492387\ne = 65537\nc = 29384723984723984723984723984723984723984723984723984723",
     "flag": "flag{RS4_1s_fun_wh3n_pr1m3s_4r3_w34k}"
+  },
+  {
+    "id": "forensics-04",
+    "title": "Hidden Image",
+    "category": "forensics",
+    "difficulty": "medium",
+    "points": 245,
+    "description": "The human eye cannot perceive everything hidden inside an image.\n\nSometimes the smallest bits carry the biggest secrets.\n\nAnalyze the image carefully and recover the hidden message.",
+    "hint": "Flag format: flag{...}\nImage Link : https://drive.google.com/file/d/1VlWjdGgDDF1BCs857GRdA4J8vwIzO07z/view?usp=drive_link",
+    "flag": "flag{1m4g3_h1d3s_m0r3_th4n_y0u_s33}"
+  },
+  {
+    "id": "re-02",
+    "title": "Runtime Flag",
+    "category": "re",
+    "difficulty": "medium",
+    "points": 245,
+    "description": "Program asks for input. Correct input triggers flag.\n\nFlag is not visible via strings because it is generated at runtime.",
+    "hint": "Format: flag{-----} (try tracing execution or debugging).\nExecutable Link : https://drive.google.com/file/d/1zjMmEulBQCf5NKaiUpmDPHd89yh_Wtf8/view?usp=drive_link",
+    "flag": "flag{34sHy_b1n_3xH}"
+  },
+  {
+    "id": "re-03",
+    "title": "False Flag",
+    "category": "re",
+    "difficulty": "medium",
+    "points": 245,
+    "description": "A mysterious binary hides the truth behind layers of deception.\n\nOne string inside the program looks like a flag, but appearances can be misleading.\nAnother string seems unusual and may hold the key to unlocking the real secret.\n\nAnalyze the binary carefully, identify how the password is verified, and recover the actual flag.\n\nSome transformations may be applied before comparison, so understanding the logic of the program will be necessary.\n\nNot everything you see is the answer.",
+    "hint": "Format: flag{---------}\n\nExecutable Link : https://drive.google.com/file/d/1FgcwdncleMOwPYZT57TvIHTxYambnXli/view?usp=drive_link",
+    "flag": "flag{m3d1um_b1n_3xp}"
   }
 ]

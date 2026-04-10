@@ -11,6 +11,27 @@ export default async function ChallengeDetail({ params }: { params: Promise<{ id
   const challenge = all.find((c) => c.id === id)
   if (!challenge) return notFound()
 
+  const renderWithLinks = (text: string) => {
+    const urlPattern = /(https?:\/\/[^\s]+)/g
+    const parts = text.split(urlPattern)
+    return parts.map((part, idx) => {
+      if (/^https?:\/\//.test(part)) {
+        return (
+          <a
+            key={idx}
+            href={part}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-primary break-all"
+          >
+            {part}
+          </a>
+        )
+      }
+      return part
+    })
+  }
+
   return (
     <main>
       <SiteHeader />
@@ -23,7 +44,9 @@ export default async function ChallengeDetail({ params }: { params: Promise<{ id
         {challenge.hint && (
           <details className="mt-4 rounded border p-3">
             <summary className="cursor-pointer text-sm">Hint</summary>
-            <p className="mt-2 text-sm text-muted-foreground whitespace-pre-line">{challenge.hint}</p>
+            <p className="mt-2 text-sm text-muted-foreground whitespace-pre-line">
+              {renderWithLinks(challenge.hint)}
+            </p>
           </details>
         )}
         <FlagForm challengeId={challenge.id} />
