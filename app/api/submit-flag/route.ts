@@ -87,13 +87,13 @@ export async function POST(req: NextRequest) {
       }
       const col = db.collection<ProgressDoc>("progress")
       const nowIso = new Date().toISOString()
-      // Only add if this challenge wasn't solved before; also increment totalPoints accordingly
-      const filter: Filter<ProgressDoc> = {
-        teamId: team.teamId,
-        // dot-notation is acceptable but TS can't infer path types cleanly
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        ...( { "solves.challengeId": { $ne: ch.id } } as any ),
+      // If this challenge is already recorded as solved for this team, do nothing.
+      const already = await col.findOne({ teamId: team.teamId, "solves.challengeId": ch.id } as Filter<ProgressDoc>)
+      if (already) {
+        return
       }
+
+      const filter: Filter<ProgressDoc> = { teamId: team.teamId }
       const update: UpdateFilter<ProgressDoc> = {
         $set: { teamName: team.teamName, updatedAt: nowIso },
         $push: { solves: { challengeId: ch.id, points: ch.points, solvedAt: nowIso } },

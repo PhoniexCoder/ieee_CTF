@@ -19,11 +19,11 @@ export default async function ChallengeDetail({ params }: { params: Promise<{ id
           {challenge.category} • {challenge.difficulty} • {challenge.points} pts
         </div>
         <h1 className="text-2xl font-semibold">{challenge.title}</h1>
-        <p className="mt-4 text-pretty">{challenge.description}</p>
+        <p className="mt-4 text-pretty whitespace-pre-line">{challenge.description}</p>
         {challenge.hint && (
           <details className="mt-4 rounded border p-3">
             <summary className="cursor-pointer text-sm">Hint</summary>
-            <p className="mt-2 text-sm text-muted-foreground">{challenge.hint}</p>
+            <p className="mt-2 text-sm text-muted-foreground whitespace-pre-line">{challenge.hint}</p>
           </details>
         )}
         <FlagForm challengeId={challenge.id} />

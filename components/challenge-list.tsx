@@ -32,7 +32,7 @@ export default function ChallengeList() {
             )}
           </CardHeader>
           <CardContent>
-            <p className="text-sm text-muted-foreground text-pretty">{c.description}</p>
+            <p className="text-sm text-muted-foreground text-pretty whitespace-pre-line">{c.description}</p>
             <div className="mt-4">
               <Link
                 href={`/challenges/${c.id}`}

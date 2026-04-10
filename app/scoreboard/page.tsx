@@ -40,10 +40,6 @@ export default async function ScoreboardPage() {
             <div>
               <h2 className="mb-2 text-lg font-medium">Global Leaderboard</h2>
               <GlobalScoreboard />
-              <p className="mt-3 text-xs text-muted-foreground">
-                The global leaderboard uses MongoDB. If not configured, you&apos;ll see a helpful message here. Set
-                MONGODB_URI (and optionally MONGODB_DB) in your project environment.
-              </p>
             </div>
           </div>
         )}

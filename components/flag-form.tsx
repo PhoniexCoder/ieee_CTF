@@ -36,7 +36,7 @@ export default function FlagForm({ challengeId }: { challengeId: string }) {
         <Input
           value={flag}
           onChange={(e) => setFlag(e.target.value)}
-          placeholder="CTF{...}"
+          placeholder="flag{...}"
           autoCapitalize="none"
           autoCorrect="off"
           spellCheck={false}
