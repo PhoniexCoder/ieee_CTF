@@ -35,7 +35,7 @@
     "category": "misc",
     "difficulty": "medium",
     "points": 90,
-    "description": "We hashed a 5-character lowercase-alphanumeric token with SHA-256. Find the hash in the /api/challenges response, recover the token by brute force, and submit as CTF{<token>}.",
+    "description": "We hashed a 5-character lowercase-alphanumeric token with SHA-256. Find the hash in the /api/challenges response, recover the token by brute force, and submit as flag{<token>}.",
     "hint": "A hex trail rides the margins of your calls; five small steps reveal the way.",
     "flag": "flag{csit1}"
   },
@@ -65,7 +65,7 @@
     "category": "crypto",
     "difficulty": "medium",
     "points": 120,
-    "description": "Ciphertext: LXFOPVEFRNHR. Recover the plaintext with a classic polyalphabetic cipher and submit as CTF{<plaintext_lowercase>}.",
+    "description": "Ciphertext: LXFOPVEFRNHR. Recover the plaintext with a classic polyalphabetic cipher and submit as flag{<plaintext_lowercase>}.",
     "hint": "The tune repeats; squeeze the clue you’re given.",
     "flag": "flag{attackatdawn}"
   },
